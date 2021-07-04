@@ -239,19 +239,12 @@ export default {
     color: "Blanco nuclear",
     colors: [
       {
-        header: "BLANCOS",
-      },
-      {
         name: "Blanco nuclear",
         color: "#ffffff",
       },
       {
         name: "Blanco roto",
         color: "#ebebe7",
-      },
-      { divider: true },
-      {
-        header: "BEIGES Y MARRONES",
       },
       {
         name: "Beige claro",
@@ -289,10 +282,6 @@ export default {
         name: "Marrón rojizo",
         color: "#7c4148",
       },
-      { divider: true },
-      {
-        header: "GRISES Y NEGRO",
-      },
       {
         name: "Gris perla",
         color: "#c1c1b8",
@@ -321,10 +310,6 @@ export default {
         name: "Negro noche",
         color: "#3b3c3c",
       },
-      { divider: true },
-      {
-        header: "AZULES",
-      },
       {
         name: "Azul vaquero",
         color: "#40486d",
@@ -340,10 +325,6 @@ export default {
       {
         name: "Azul celeste",
         color: "#86a5bf",
-      },
-      { divider: true },
-      {
-        header: "VERDES",
       },
       {
         name: "Verde salvia",
@@ -369,10 +350,6 @@ export default {
         name: "Verde lima",
         color: "#ccca62",
       },
-      { divider: true },
-      {
-        header: "SALMÓN, AMARILLOS Y NARANJAS",
-      },
       {
         name: "Salmón pálido",
         color: "#e29e79",
@@ -392,10 +369,6 @@ export default {
       {
         name: "Calabaza",
         color: "#D17D4F",
-      },
-      { divider: true },
-      {
-        header: "ROSAS, VIOLETAS Y ROJOS",
       },
       {
         name: "Rojo",
