@@ -29,6 +29,7 @@
             :rules="[(v) => !!v || 'Item is required']"
             label="Fabric"
             required
+            auto-select-first
           ></v-autocomplete>
         </v-col>
 
@@ -41,6 +42,7 @@
             required
             item-text="name"
             item-value="name"
+            auto-select-first
           >
             <!-- <template v-slot:selection="{item}">
               <div class="color-item-container">
@@ -76,6 +78,7 @@
             :rules="[(v) => !!v || 'Item is required']"
             label="Drive"
             required
+            auto-select-first
           ></v-autocomplete>
         </v-col>
 
@@ -86,6 +89,7 @@
             :rules="[(v) => !!v || 'Item is required']"
             label="Drive chain position"
             required
+            auto-select-first
           ></v-autocomplete>
         </v-col>
       </v-row>
@@ -98,6 +102,7 @@
             :rules="[(v) => !!v || 'Item is required']"
             label="Drive mechanism"
             required
+            auto-select-first
           ></v-autocomplete>
         </v-col>
 
@@ -108,6 +113,7 @@
             :rules="[(v) => !!v || 'Item is required']"
             label="Length Brackets"
             required
+            auto-select-first
           ></v-autocomplete>
         </v-col>
 
@@ -118,6 +124,7 @@
             :rules="[(v) => !!v || 'Item is required']"
             label="Color long brackets"
             required
+            auto-select-first
           ></v-autocomplete>
         </v-col>
 
@@ -128,6 +135,7 @@
             :rules="[(v) => !!v || 'Item is required']"
             label="Type of wall or ceiling plugs"
             required
+            auto-select-first
           ></v-autocomplete>
         </v-col>
       </v-row>
@@ -140,6 +148,7 @@
             :rules="[(v) => !!v || 'Item is required']"
             label="Fabric drop"
             required
+            auto-select-first
           ></v-autocomplete>
         </v-col>
 
@@ -152,6 +161,7 @@
             required
             item-text="name"
             item-value="name"
+            auto-select-first
           >
             <template slot="item" slot-scope="data">
               <!-- Divider and Header-->
@@ -175,6 +185,7 @@
             :rules="[(v) => !!v || 'Item is required']"
             label="Metal or PVC chain?"
             required
+            auto-select-first
           ></v-autocomplete>
         </v-col>
 
@@ -185,6 +196,7 @@
             :rules="[(v) => !!v || 'Item is required']"
             label="Chain counterweight"
             required
+            auto-select-first
           ></v-autocomplete>
         </v-col>
       </v-row>
