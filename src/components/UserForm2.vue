@@ -42,13 +42,13 @@
             item-text="name"
             item-value="name"
           >
-            <template v-slot:selection="{item}">
+            <!-- <template v-slot:selection="{item}">
               <div class="color-item-container">
                 {{ item.name }}
               <div class="colors" :style="{backgroundColor: item.color}"></div>
               </div>
               
-            </template>
+            </template> -->
 
             <template slot="item" slot-scope="data">
               <!-- Divider and Header-->
@@ -211,9 +211,9 @@ export default {
       (v) => !!v || "E-mail is required",
       (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
     ],
-    fabric: null,
+    fabric: "Zenit",
     fabrics: ["Zenit", "Loneta resinada", "Shantung", "Lino", "Penélope"],
-    color: null,
+    color: "Blanco nuclear",
     colors: [
       {
         header: "BLANCOS",
@@ -399,27 +399,27 @@ export default {
         color: "#816983",
       },
     ],
-    drive: null,
+    drive: "With chain",
     drives: ["With chain", "With motor"],
-    position: null,
+    position: "Left",
     positions: ["Left", "Right"],
-    mechanism: null,
+    mechanism: "Fluid drive",
     mechanisms: ["Fluid drive", "Fluid + drive"],
-    bracket: null,
+    bracket: "Normal wall or ceiling brackets",
     brackets: ["Normal wall or ceiling brackets", "Long wall brackets"],
-    colorLong: null,
+    colorLong: "White",
     colorLongs: ["White", "Beige", "Grey", "Black", "Brown", "Metallic"],
-    wallType: null,
+    wallType: "Universal dowels",
     wallTypes: [
       "Universal dowels",
       "Fisher Duoblade plasterboard dowels (4 pcs)",
     ],
-    fabricDrop: null,
+    fabricDrop: "Fabric drop behind the tube",
     fabricDrops: [
       "Fabric drop behind the tube",
       "Fabric drop in front of tube",
     ],
-    counterweight: null,
+    counterweight: "Concealed oval" ,
     counterweights: [
       { header: "Standard counterweights" },
       { name: "Concealed oval" },
@@ -430,9 +430,9 @@ export default {
       { name: "Rectangular silver sandpaper view" },
       { name: "Rectangular champagne view" },
     ],
-    metal: null,
+    metal: "PVC chain",
     metals: ["PVC chain", "Metal chain"],
-    chain: null,
+    chain: "Normal counterweight",
     chains: ["Normal counterweight", "Child safety chain tensioner"],
   }),
 
