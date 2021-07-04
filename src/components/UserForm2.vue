@@ -53,7 +53,6 @@
             </template> -->
 
             <template slot="item" slot-scope="data">
-              <!-- Divider and Header-->
               <template v-if="typeof data.item !== 'object'">
                 <v-list-item-content v-text="data.item" />
               </template>
@@ -68,7 +67,19 @@
                 </div>
               </template>
             </template>
-          </v-autocomplete>
+
+            <!-- <template slot="item" slot-scope="data">
+              <template v-if="typeof data.item !== 'object'">
+                <v-list-item-content v-text="data.item" />
+              </template>
+
+              <template v-else>
+                <v-list-item-content>
+                  <v-list-item-title v-html="data.item.name" />
+                </v-list-item-content>
+              </template>
+            </template> -->
+          </v-autocomplete> 
         </v-col>
 
         <v-col cols="12" sm="3">
