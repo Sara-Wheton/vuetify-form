@@ -44,9 +44,18 @@
           </template>
 
           <template v-else>
-            <v-list-item-content>
+            <!-- <v-list-item-content>
               <v-list-item-title v-html="data.item.name" />
-            </v-list-item-content>
+              <div class="colors"></div>
+            </v-list-item-content> -->
+
+            <div class="color-item-container">
+              <div>{{ data.item.name }}</div>
+              <div
+                class="colors"
+                :style="{ backgroundColor: data.item.color }"
+              ></div>
+            </div>
           </template>
         </template>
       </v-autocomplete>
@@ -160,8 +169,7 @@ export default {
     height: 60,
     numberRule: [
       (v) => !!v || "This field is required!",
-      (v) =>
-        (v && typeof v === "number") || "This field should be number value",
+      (v) => /^-?\d*\.?\d*$/.test(v) || "This field is should be number!",
     ],
     email: "",
     emailRules: [
@@ -404,5 +412,17 @@ export default {
 <style lang="scss">
 .v-form {
   padding: 30px;
+}
+
+.color-item-container {
+  display: flex;
+  align-items: center;
+}
+
+.colors {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  margin-left: 20px;
 }
 </style>
